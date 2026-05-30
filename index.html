@@ -9,16 +9,15 @@
 </head>
 
 <body>
-    
+
     <script>
-        let nombre = prompt("Ingresa tu nombre:");
-
-        if (nombre == "" || nombre == null) {
-            nombre = "Invitado";
-        }
-
-        alert("Bienvenido/a " + nombre);
+        window.addEventListener("load", () => {
+            document.body.addEventListener("click", () => {
+                document.getElementById("musica").play();
+            }, { once: true });
+        });
     </script>
+
 
 
     <header>
@@ -26,138 +25,137 @@
         <h1>EL BUEN TACO</h1>
 
         <p class="bienvenida">
-            Hola,
-            <script>document.write(nombre)</script>
+            Hola, Bienvenido
         </p>
 
-        <img src="https://i.ibb.co/1J6QF82F/Whats-App-Image-2026-05-27-at-4-35-15-PM.jpg" alt="Logo" class="logo">
+        <img src="./assets/taco-logo.jpg" alt="Logo" class="logo">
 
     </header>
     <nav>
-        <a href="index.html">Inicio</a>
-        <a href="menu.html">Menú</a>
-        <a href="servicios.html">Servicios</a>
-        <a href="acerca.html">Acerca de</a>
+        <a href="#inicio">Inicio</a>
+        <a href="#menu">Menú</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#acerca">Acerca de</a>
     </nav>
 
     <section id="inicio">
-        <div class="card"> 
-    
-<!-- PROMOCIONES -->
+        <div class="card">
 
-<h2>Promociones Actuales</h2>
+            <!-- PROMOCIONES -->
 
-<div class="promociones">
+            <h2>Promociones Actuales</h2>
 
-    <div class="promo-card">
-        <img src="https://i.ibb.co/qYNsHhv7/Chat-GPT-Image-28-may-2026-06-18-37-p-m.png" alt="Promoción 1">
+            <div class="promociones">
 
-        <h3>2x1 en Tacos</h3>
+                <div class="promo-card">
+                    <img src="./assets/4x1.png" alt="Promoción 1">
 
-        <p>
-            Todos los martes disfruta de nuestra promoción especial
-            de tacos al pastor al 2x1.
-        </p>
-    </div>
+                    <h3>4x1 en Tacos</h3>
 
-    <div class="promo-card">
-        <img src="https://i.ibb.co/Z1pXdS7Z/Chat-GPT-Image-28-may-2026-06-21-09-p-m.png" alt="Promoción 2">
+                    <p>
+                        Todos los martes disfruta de nuestra promoción especial
+                        de tacos al pastor al 2x1.
+                    </p>
+                </div>
 
-        <h3>Combo Familiar</h3>
+                <div class="promo-card">
+                    <img src="./assets/familiar.png" alt="Promoción 2">
 
-        <p>
-            Incluye 12 tacos, nachos y bebida grande
-            por solo Q150.00
-        </p>
-    </div>
+                    <h3>Combo Familiar</h3>
 
-    <div class="promo-card">
-        <img src="https://i.ibb.co/j9TGpXCj/Chat-GPT-Image-28-may-2026-06-19-57-p-m.png" alt="Promoción 3">
+                    <p>
+                        Incluye 12 tacos, nachos y bebida grande
+                        por solo Q150.00
+                    </p>
+                </div>
 
-        <h3>Birriamen Uzumaki</h3>
+                <div class="promo-card">
+                    <img src="./assets/uzumaki.png" alt="Promoción 3">
 
-        <p>
-            Prueba nuestro nuevo taco gourmet con
-            ingredientes especiales y salsa artesanal.
-        </p>
-    </div>
+                    <h3>Birriamen Uzumaki</h3>
 
-    <div class="promo-card">
-        <img src="https://i.ibb.co/ZpHr6kNc/Chat-GPT-Image-28-may-2026-06-20-06-p-m.png" alt="Promoción 4">
+                    <p>
+                        Prueba nuestro nuevo taco gourmet con
+                        ingredientes especiales y salsa artesanal.
+                    </p>
+                </div>
 
-        <h3>Takero mucho</h3>
+                <div class="promo-card">
+                    <img src="./assets/taco-love.png" alt="Promoción 4">
 
-        <p>
-            Prueba nuestro nuevo taco gourmet con
-            ingredientes especiales y salsa artesanal.
-        </p>
-    </div>
+                    <h3>Takero mucho</h3>
 
-    <div class="promo-card">
-        <img src="https://i.ibb.co/mrJZz78x/Chat-GPT-Image-28-may-2026-06-20-13-p-m.png" alt="Promoción 5">
+                    <p>
+                        Prueba nuestro nuevo taco gourmet con
+                        ingredientes especiales y salsa artesanal.
+                    </p>
+                </div>
 
-        <h3>Taco kamado</h3>
+                <div class="promo-card">
+                    <img src="./assets/kamado.png" alt="Promoción 5">
 
-        <p>
-            Prueba nuestro nuevo taco gourmet con
-            ingredientes especiales y salsa artesanal.
-        </p>
-    </div>
-</div>
+                    <h3>Taco kamado</h3>
 
-<!-- PRODUCTOS NUEVOS -->
+                    <p>
+                        Prueba nuestro nuevo taco gourmet con
+                        ingredientes especiales y salsa artesanal.
+                    </p>
+                </div>
+            </div>
 
-<h2>Productos Nuevos</h2>
+            <!-- PRODUCTOS NUEVOS -->
 
-<div class="productos-nuevos">
+            <h2>Productos Nuevos</h2>
 
-    <!-- PRODUCTO 1 -->
+            <div class="productos-nuevos">
 
-    <div class="nuevo-card">
+                <!-- PRODUCTO 1 -->
 
-        <img src="https://i.ibb.co/PvnLFCv7/Chat-GPT-Image-28-may-2026-07-14-42-p-m.png" alt="Producto Nuevo 1">
+                <div class="nuevo-card">
 
-        <h3>Taco Volcánico</h3>
+                    <img src="./assets/volcanico.png" alt="Producto Nuevo 1">
 
-        <p>
-            Delicioso taco preparado con carne marinada,
-            queso fundido y salsa especial picante.
-        </p>
+                    <h3>Taco Volcánico</h3>
 
-    </div>
+                    <p>
+                        Delicioso taco preparado con carne marinada,
+                        queso fundido y salsa especial picante.
+                    </p>
 
-    <!-- PRODUCTO 2 -->
+                </div>
 
-    <div class="nuevo-card">
+                <!-- PRODUCTO 2 -->
 
-        <img src="https://i.ibb.co/hx3PTPZ4/Chat-GPT-Image-28-may-2026-07-16-55-p-m.png" alt="Producto Nuevo 2">
+                <div class="nuevo-card">
 
-        <h3>Burrito Supremo</h3>
+                    <img src="./assets/burrito.png" alt="Producto Nuevo 2">
 
-        <p>
-            Burrito gigante relleno de carne, vegetales frescos,
-            queso y guacamole artesanal.
-        </p>
+                    <h3>Burrito Supremo</h3>
 
-    </div>
+                    <p>
+                        Burrito gigante relleno de carne, vegetales frescos,
+                        queso y guacamole artesanal.
+                    </p>
 
-    <!-- PRODUCTO 3 -->
+                </div>
 
-    <div class="nuevo-card">
+                <!-- PRODUCTO 3 -->
 
-        <img src="https://i.ibb.co/chgmW09R/nachos.png" alt="Producto Nuevo 3">
+                <div class="nuevo-card">
 
-        <h3>Nachos Especiales</h3>
+                    <img src="./assets/3tacos.png" alt="Producto Nuevo 3">
 
-        <p>
-            Nachos crujientes acompañados de queso cheddar,
-            carne y salsa de la casa.
-        </p>
+                    <h3>Nachos Especiales</h3>
 
-    </div>
+                    <p>
+                        Nachos crujientes acompañados de queso cheddar,
+                        carne y salsa de la casa.
+                    </p>
 
-</div>
-```
+                </div>
+
+            </div>
+            
 
 
             <h2>Inicio</h2>
@@ -230,11 +228,7 @@
     </section>
 
 
-
-    </div>
-    </section>
-
-    <section id="Menú">
+    <section id="menu">
         <div class="card">
             <h2>Menú</h2>
 
@@ -300,7 +294,7 @@
 
     <section id="servicios">
         <div class="card">
-            <h1>servicios</h1>
+            <h2>Servicios</h2>
             <br>
             <p>Servicio a Domicilio</p>
             <br>
@@ -348,7 +342,7 @@
 
 
 
-    <section id="Acerca de">
+    <section id="acerca">
         <div class="card">
             <h2>Acerca de Nosotros</h2>
             <h3>Programadores</h3>
@@ -378,10 +372,9 @@
         </div>
     </section>
 
-    <audio controls autoplay loop>
-        <source src="audio/caperuza.mp3" type="audio/ogg">
+    <audio id="musica" loop>
+        <source src="./assets/cancion.mp3" type="audio/mpeg">
     </audio>
-
 
 
     <footer>
